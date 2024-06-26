@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-const Keywindows = () => {
+const Keywindows = ({handleButtonPress}) => {
   const sciKey = ['cos', 'sin', 'ln', 'e', 'log', 'tan', 'pi', '^', '!', '√'];
   const basicKey = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '-', '*', '/', '=', 'C', '.', '±', '%'];
 
@@ -11,7 +11,7 @@ const Keywindows = () => {
         <h2>Scientific Keys</h2>
         <div className="keys">
           {sciKey.map(key => (
-            <button key={key} className="key-button">
+            <button key={key} className="key-button" onClick={()=>{handleButtonPress(key)}}>
               {key}
             </button>
           ))}
@@ -21,7 +21,7 @@ const Keywindows = () => {
         <h2>Basic Keys</h2>
         <div className="keys">
           {basicKey.map(key => (
-            <button key={key} className="key-button">
+            <button key={key} className="key-button" onClick={()=>{handleButtonPress(key)}}>
               {key}
             </button>
           ))}

@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Keywindows from './Keywindows.js';
 import DisplayWindows from './DisplayWindows';
 const Calculator = () => {
+
+  const[expression, setExpressions] =useState("");
+  const[desplayedex,setDesplayedex] = useState('');
+  const[result,setResult] = useState(0);
+
+  function handleButtonPress()
   return (
     <div>
-       <Keywindows/>
-       <DisplayWindows/> 
+       <DisplayWindows expression={desplayedex} result={result}/>
+       <Keywindows handleButtonPress/> 
     </div>
   )
 }
