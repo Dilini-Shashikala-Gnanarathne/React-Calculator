@@ -29,25 +29,39 @@ body {
   margin-bottom: 20px;
 }
 
+
+
+.keywindows-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.scientific-keys, .basic-keys {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 10px;
+}
+
 .keys {
   display: flex;
   flex-wrap: wrap;
 }
 
-.keys button {
-  background-color: #f9f9f9;
+.key-button {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1em;
-  margin: 5px;
-  padding: 20px;
-  flex: 1 0 21%; /* adjust button size */
-  max-width: 21%; /* adjust button size */
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 1em;
+  text-align: center;
+  line-height: 50px;
 }
 
-.keys button:hover {
+.key-button:hover {
   background-color: #ddd;
 }
