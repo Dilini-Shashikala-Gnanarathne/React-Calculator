@@ -1,7 +1,53 @@
-body{
-  background-color: rgb(17, 211, 27);
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
 }
 
-.App{
-  background-color: blue;
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.display {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: right;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.keys button {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  margin: 5px;
+  padding: 20px;
+  flex: 1 0 21%; /* adjust button size */
+  max-width: 21%; /* adjust button size */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.keys button:hover {
+  background-color: #ddd;
 }
