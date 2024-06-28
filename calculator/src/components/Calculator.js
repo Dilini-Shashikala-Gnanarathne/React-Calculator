@@ -7,11 +7,13 @@ const Calculator = () => {
   const[desplayedex,setDesplayedex] = useState('');
   const[result,setResult] = useState(0);
 
-  function handleButtonPress()
+  function handleButtonPress(){
+    console.log(valuee);
+  }
   return (
     <div>
        <DisplayWindows expression={desplayedex} result={result}/>
-       <Keywindows handleButtonPress/> 
+       <Keywindows  handleButtonPress={handleButtonPress}/> 
     </div>
   )
 }

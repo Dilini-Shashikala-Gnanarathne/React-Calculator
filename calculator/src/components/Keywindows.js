@@ -11,7 +11,7 @@ const Keywindows = ({handleButtonPress}) => {
         <h2>Scientific Keys</h2>
         <div className="keys">
           {sciKey.map(key => (
-            <button key={key} className="key-button" onClick={()=>{handleButtonPress(key)}}>
+            <button key={key} className="key-button" onClick={()=>{handleButtonPress(key)}} >
               {key}
             </button>
           ))}
